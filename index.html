@@ -2251,69 +2251,59 @@ if (typeof module !== 'undefined' && module.exports) {
     module.exports = DiscountCalculator;
 }
     </script>
+<!-- Финальный вариант для GitHub Pages -->
 <script>
-// Белый список IP-адресов Labrika
-const LABRIKA_IPS = ['77.232.139.133', '45.94.20.157'];
-
-// Получаем IP через внешний сервис
-async function checkIP() {
-    try {
-        const response = await fetch('https://api.ipify.org?format=json');
-        const data = await response.json();
-        const userIP = data.ip;
-        
-        console.log('User IP:', userIP);
-        
-        // Проверяем IP
-        if (LABRIKA_IPS.includes(userIP)) {
-            console.log('✅ Labrika bot detected');
-            // Разрешаем полный доступ
-            enableFullAccess();
-        } else {
-            console.log('🌐 Regular user');
-            // Ограничиваем некоторые функции для ботов
-            restrictBotAccess();
-        }
-        
-        // Логируем (отправляем на внешний сервис)
-        logAccess(userIP);
-        
-    } catch (error) {
-        console.log('IP detection failed, allowing full access');
-        enableFullAccess();
+// Enhanced bot detection for GitHub Pages
+class BotProtection {
+    constructor() {
+        this.labrikaIPs = ['77.232.139.133', '45.94.20.157'];
+        this.init();
     }
-}
-
-function enableFullAccess() {
-    // Ничего не меняем - полный доступ
-    console.log('Full access enabled');
-}
-
-function restrictBotAccess() {
-    // Скрываем/блокируем контент для неизвестных ботов
-    const elementsToHide = document.querySelectorAll('.sensitive-content');
-    elementsToHide.forEach(el => {
-        el.style.display = 'none';
-    });
-}
-
-function logAccess(ip) {
-    // Отправляем логи на внешний сервис
-    const logData = {
-        ip: ip,
-        timestamp: new Date().toISOString(),
-        userAgent: navigator.userAgent,
-        url: window.location.href
-    };
     
-    // Можно отправить на Google Analytics, Telegram бот и т.д.
-    if (typeof gtag !== 'undefined') {
-        gtag('event', 'page_visit', logData);
+    async init() {
+        const userIP = await this.getIP();
+        this.analyzeVisitor(userIP);
+    }
+    
+    async getIP() {
+        try {
+            const responses = await Promise.race([
+                fetch('https://api.ipify.org?format=json'),
+                fetch('https://api64.ipify.org?format=json')
+            ]);
+            const data = await responses.json();
+            return data.ip;
+        } catch {
+            return 'unknown';
+        }
+    }
+    
+    analyzeVisitor(ip) {
+        const isLabrika = this.labrikaIPs.includes(ip);
+        const isBot = /bot|crawl|spider|labrika/i.test(navigator.userAgent);
+        
+        console.log(`Visitor: ${ip}, Labrika: ${isLabrika}, Bot: ${isBot}`);
+        
+        if (isLabrika) {
+            this.onLabrikaDetected();
+        } else if (isBot) {
+            this.onUnknownBotDetected();
+        }
+    }
+    
+    onLabrikaDetected() {
+        // Labrika имеет полный доступ
+        console.log('✅ Labrika bot - full access granted');
+    }
+    
+    onUnknownBotDetected() {
+        // Другие боты - ограниченный доступ
+        console.log('🤖 Unknown bot - limited access');
     }
 }
 
-// Запускаем проверку при загрузке страницы
-document.addEventListener('DOMContentLoaded', checkIP);
+// Запускаем защиту
+new BotProtection();
 </script>
 </body>
 </html>
