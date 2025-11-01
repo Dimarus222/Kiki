@@ -20,6 +20,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Performance optimizations -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
+
+<!-- Compress images and use WebP format -->
+<picture>
+    <source srcset="kiki.webp" type="image/webp">
+    <source srcset="kiki.jpg" type="image/jpeg">
+    <img src="kiki.jpg" alt="Kiki" loading="lazy" width="800" height="600">
+</picture>
+
     <style>
         :root {
             --color-dark: #0f172a;
@@ -516,28 +531,42 @@
             color: var(--color-text-light);
         }
 
-        /* Testimonials Section */
+/* Testimonials Section - Optimized for all devices */
+.testimonials {
+    background: linear-gradient(to bottom, var(--color-darker), var(--color-purple-dark));
+    padding: 60px 0;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+    gap: 30px;
+    max-width: 100%;
+}
+
 .testimonial-card {
     background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
     backdrop-filter: blur(20px);
-    border-radius: 24px;
+    border-radius: 20px;
     border: 1px solid rgba(255,255,255,0.2);
     overflow: hidden;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
+    height: 800px; /* Увеличиваем общую высоту из-за большего изображения */
 }
 
 .testimonial-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     border-color: rgba(255,255,255,0.4);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
 .testimonial-image {
-    height: 500px;
+    height: 450px; /* Фиксированная высота изображения 450px на всех устройствах */
     position: relative;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .testimonial-image img {
@@ -545,87 +574,269 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: transform 0.3s ease;
 }
 
-/* Чтобы изображение всегда было видно полностью */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 40px;
-    max-width: 100%;
-}
-
-.image-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+.testimonial-card:hover .testimonial-image img {
+    transform: scale(1.05);
 }
 
 .testimonial-content {
-    padding: 30px;
+    padding: 25px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    height: calc(800px - 450px); /* Высота контента = общая высота - высота изображения */
 }
 
 .testimonial-quote {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--color-amber);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center;
     line-height: 1;
+    flex-shrink: 0;
 }
 
 .testimonial-text {
     color: var(--color-text-light);
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-style: italic;
-    line-height: 1.6;
+    line-height: 1.5;
     text-align: justify;
     text-justify: inter-word;
     flex-grow: 1;
+    font-size: 0.95rem;
+    overflow-y: auto; /* Добавляем прокрутку если текст не помещается */
+    padding-right: 5px;
+}
+
+/* Стили для скроллбара */
+.testimonial-text::-webkit-scrollbar {
+    width: 4px;
+}
+
+.testimonial-text::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.1);
+    border-radius: 2px;
+}
+
+.testimonial-text::-webkit-scrollbar-thumb {
+    background: var(--color-amber);
+    border-radius: 2px;
 }
 
 .testimonial-rating {
     display: flex;
     justify-content: center;
-    gap: 6px;
-    margin-bottom: 20px;
+    gap: 4px;
+    margin-bottom: 15px;
+    flex-shrink: 0;
 }
 
 .star {
     color: var(--color-amber);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .testimonial-author {
     text-align: center;
     border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 20px;
+    padding-top: 15px;
+    flex-shrink: 0;
 }
 
 .author-name {
     font-weight: 600;
     color: var(--color-amber);
-    margin-bottom: 5px;
-    font-size: 1.1rem;
+    margin-bottom: 4px;
+    font-size: 1rem;
 }
 
 .product-info {
     color: var(--color-text-light);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     opacity: 0.8;
 }
 
+/* Mobile First Optimizations */
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 40px 0;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 10px;
+    }
+    
+    .testimonial-card {
+        border-radius: 16px;
+        margin: 0 auto;
+        max-width: 400px;
+        height: 800px; /* Немного меньше на мобильных */
+    }
+    
+    .testimonial-image {
+        height: 450px; /* Все равно 450px на мобильных */
+    }
+    
+    .testimonial-content {
+        padding: 20px;
+        height: calc(800px - 450px); /* Корректируем высоту контента */
+    }
+    
+    .testimonial-text {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    
+    .testimonial-quote {
+        font-size: 1.75rem;
+        margin-bottom: 12px;
+    }
+    
+    .author-name {
+        font-size: 0.95rem;
+    }
+    
+    .product-info {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials {
+        padding: 30px 0;
+    }
+    
+    .testimonials-grid {
+        gap: 20px;
+    }
+    
+    .testimonial-card {
+        height: 800px; /* Чуть меньше на очень маленьких экранах */
+    }
+    
+    .testimonial-image {
+        height: 450px; /* Все равно 450px */
+    }
+    
+    .testimonial-content {
+        padding: 15px;
+        height: calc(800px - 450px);
+    }
+    
+    .testimonial-text {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    
+    .testimonial-quote {
+        font-size: 1.5rem;
+    }
+    
+    .star {
+        font-size: 1rem;
+    }
+    
+    .testimonial-author {
+        padding-top: 12px;
+    }
+}
+
+/* Tablet Optimizations */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+        gap: 25px;
+    }
+    
+    .testimonial-card {
+        height: 820px; /* Средняя высота на планшетах */
+    }
+    
+    .testimonial-image {
+        height: 450px; /* 450px на планшетах */
+    }
+    
+    .testimonial-content {
+        height: calc(820px - 450px);
+    }
+    
+    .testimonial-text {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
+
+/* Large Desktop Optimizations */
+@media (min-width: 1200px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+        gap: 35px;
+    }
+    
+    .testimonial-card {
+        height: 750px; /* Стандартная высота на десктопе */
+    }
+    
+    .testimonial-image {
+        height: 450px; /* 450px на десктопе */
+    }
+    
+    .testimonial-content {
+        height: calc(800px - 450px);
+    }
+    
+    .testimonial-text {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+    .testimonial-card:hover {
+        transform: none;
+    }
+    
+    .testimonial-card:active {
+        transform: scale(0.98);
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .testimonial-card,
+    .testimonial-card:hover,
+    .testimonial-image img {
+        transition: none;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .testimonial-card {
+        border: 2px solid white;
+    }
+    
+    .testimonial-text {
+        color: white;
+    }
+}
+
+/* Dark mode support (already dark, but for consistency) */
+@media (prefers-color-scheme: dark) {
+    .testimonial-card {
+        background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.2) 100%);
+    }
+}
         /* CTA Section */
         .cta {
             background: linear-gradient(135deg, var(--color-darker) 0%, var(--color-purple-dark) 100%);
@@ -1575,8 +1786,7 @@
     <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3); opacity: 0; transition: opacity 0.3s ease;"></div>
 </div>
                 <div class="testimonial-content">
-                    <p class="testimonial-text">Спасибо за быструю работу🔥🔥🔥 Эмоции, красота и стиль. Вот так бы описал изделие. Жене подарок безумно понравился❤️
-                    <p class="testimonial-text">Отдельное спасибо за красивую упаковку))</p>
+                    <p class="testimonial-text">Спасибо за быструю работу🔥🔥🔥 Эмоции, красота и стиль. Вот так бы описал изделие. Жене подарок безумно понравился❤️Отдельное спасибо за красивую упаковку))</p>
                     <div class="testimonial-rating">
                         <span class="star">★</span>
                         <span class="star">★</span>
