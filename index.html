@@ -2251,59 +2251,6 @@ if (typeof module !== 'undefined' && module.exports) {
     module.exports = DiscountCalculator;
 }
     </script>
-<!-- Финальный вариант для GitHub Pages -->
-<script>
-// Enhanced bot detection for GitHub Pages
-class BotProtection {
-    constructor() {
-        this.labrikaIPs = ['77.232.139.133', '45.94.20.157'];
-        this.init();
-    }
-    
-    async init() {
-        const userIP = await this.getIP();
-        this.analyzeVisitor(userIP);
-    }
-    
-    async getIP() {
-        try {
-            const responses = await Promise.race([
-                fetch('https://api.ipify.org?format=json'),
-                fetch('https://api64.ipify.org?format=json')
-            ]);
-            const data = await responses.json();
-            return data.ip;
-        } catch {
-            return 'unknown';
-        }
-    }
-    
-    analyzeVisitor(ip) {
-        const isLabrika = this.labrikaIPs.includes(ip);
-        const isBot = /bot|crawl|spider|labrika/i.test(navigator.userAgent);
-        
-        console.log(`Visitor: ${ip}, Labrika: ${isLabrika}, Bot: ${isBot}`);
-        
-        if (isLabrika) {
-            this.onLabrikaDetected();
-        } else if (isBot) {
-            this.onUnknownBotDetected();
-        }
-    }
-    
-    onLabrikaDetected() {
-        // Labrika имеет полный доступ
-        console.log('✅ Labrika bot - full access granted');
-    }
-    
-    onUnknownBotDetected() {
-        // Другие боты - ограниченный доступ
-        console.log('🤖 Unknown bot - limited access');
-    }
-}
 
-// Запускаем защиту
-new BotProtection();
-</script>
 </body>
 </html>
