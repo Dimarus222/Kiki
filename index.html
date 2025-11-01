@@ -2251,5 +2251,69 @@ if (typeof module !== 'undefined' && module.exports) {
     module.exports = DiscountCalculator;
 }
     </script>
+<script>
+// Белый список IP-адресов Labrika
+const LABRIKA_IPS = ['77.232.139.133', '45.94.20.157'];
+
+// Получаем IP через внешний сервис
+async function checkIP() {
+    try {
+        const response = await fetch('https://api.ipify.org?format=json');
+        const data = await response.json();
+        const userIP = data.ip;
+        
+        console.log('User IP:', userIP);
+        
+        // Проверяем IP
+        if (LABRIKA_IPS.includes(userIP)) {
+            console.log('✅ Labrika bot detected');
+            // Разрешаем полный доступ
+            enableFullAccess();
+        } else {
+            console.log('🌐 Regular user');
+            // Ограничиваем некоторые функции для ботов
+            restrictBotAccess();
+        }
+        
+        // Логируем (отправляем на внешний сервис)
+        logAccess(userIP);
+        
+    } catch (error) {
+        console.log('IP detection failed, allowing full access');
+        enableFullAccess();
+    }
+}
+
+function enableFullAccess() {
+    // Ничего не меняем - полный доступ
+    console.log('Full access enabled');
+}
+
+function restrictBotAccess() {
+    // Скрываем/блокируем контент для неизвестных ботов
+    const elementsToHide = document.querySelectorAll('.sensitive-content');
+    elementsToHide.forEach(el => {
+        el.style.display = 'none';
+    });
+}
+
+function logAccess(ip) {
+    // Отправляем логи на внешний сервис
+    const logData = {
+        ip: ip,
+        timestamp: new Date().toISOString(),
+        userAgent: navigator.userAgent,
+        url: window.location.href
+    };
+    
+    // Можно отправить на Google Analytics, Telegram бот и т.д.
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'page_visit', logData);
+    }
+}
+
+// Запускаем проверку при загрузке страницы
+document.addEventListener('DOMContentLoaded', checkIP);
+</script>
 </body>
 </html>
