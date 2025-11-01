@@ -1,2 +1,2073 @@
-ДИМА ДОЛБАЕБ АХАХХААХААХ
-КИРА СОСКА КОНЧИЛ ЖЕСТКО
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨KIKI rainbow EYES</title>
+    
+    <!-- Favicon и иконки для разных устройств -->
+    <link rel="icon" href="logo.jpg">
+<link rel="apple-touch-icon" href="logo.jpg">
+    
+    <!-- Цвет браузера для мобильных устройств -->
+    <meta name="theme-color" content="#7e22ce">
+    <meta name="msapplication-TileColor" content="#7e22ce">
+    
+    <!-- Описание для SEO -->
+    <meta name="description" content="Уникальные украшения с радужной оболочкой глаза от Киры. Кулоны, кольца и брелоки ручной работы. Каждое изделие единственное в своем роде.">
+    <meta name="keywords" content="украшения, радужка, глаза, кулоны, кольца, брелоки, ручная работа, уникальные, Кира">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-dark: #0f172a;
+            --color-darker: #020617;
+            --color-purple: #7e22ce;
+            --color-purple-dark: #581c87;
+            --color-amber: #f59e0b;
+            --color-amber-dark: #d97706;
+            --color-rose: #f43f5e;
+            --color-rose-dark: #e11d48;
+            --color-emerald: #10b981;
+            --color-text: #e2e8f0;
+            --color-text-light: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--color-darker) 0%, var(--color-purple-dark) 100%);
+            color: var(--color-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-rose) 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, rgba(126, 34, 206, 0.2) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 80%, rgba(244, 63, 94, 0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: 24px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            color: var(--color-text-light);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-rose) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* About Section */
+        .about {
+            background: linear-gradient(to bottom, var(--color-darker), var(--color-purple-dark));
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 500px;
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(244, 63, 94, 0.1) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-rose) 100%);
+            z-index: -1;
+            border-radius: 25px;
+            opacity: 0.3;
+            filter: blur(15px);
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+        }
+
+        .about-content p {
+            margin-bottom: 16px;
+            color: var(--color-text-light);
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background: linear-gradient(to bottom, var(--color-purple-dark), var(--color-darker));
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        .section-header p {
+            font-size: 1.25rem;
+            color: var(--color-text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            color: var(--color-text);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-rose) 100%);
+            transform: translateY(-2px);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(245, 158, 11, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .product-image {
+            height: 400px;
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(244, 63, 94, 0.1) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: var(--color-amber);
+            color: var(--color-darker);
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .product-content {
+            padding: 24px;
+        }
+
+        .product-title {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+    text-align: center; /* ← ДОБАВЬ ЭТУ СТРОКУ */
+    width: 100%; /* ← И ЭТУ */
+}
+
+.product-description {
+    color: var(--color-text-light);
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+    text-align: justify; /* ← ДОБАВЬ ЭТУ СТРОКУ */
+    text-justify: inter-word; /* ← И ЭТУ */
+}
+        .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-price {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-amber);
+        }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, var(--color-darker) 0%, var(--color-purple-dark) 100%);
+            border-radius: 20px;
+            max-width: 800px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .modal.active .modal-content {
+            transform: scale(1);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+
+        .modal-close:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .modal-image {
+            height: 400px;
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(244, 63, 94, 0.1) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-body {
+            padding: 30px;
+        }
+
+        .modal-title {
+            font-size: 1.75rem;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .modal-price {
+            font-size: 1.5rem;
+            color: var(--color-amber);
+            font-weight: 600;
+        }
+
+        .modal-description {
+            margin-bottom: 24px;
+            color: var(--color-text-light);
+        }
+
+        .modal-unique {
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 24px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--color-amber);
+        }
+
+        .modal-materials h4 {
+            margin-bottom: 12px;
+        }
+
+        .modal-materials ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .modal-materials li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .modal-materials li::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--color-amber);
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 16px;
+        }
+
+        .modal-actions .btn {
+            flex: 1;
+            justify-content: center;
+        }
+
+        /* Process Section */
+        .process {
+            background: linear-gradient(to bottom, var(--color-darker), var(--color-purple-dark));
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .process-card {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .process-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+
+        .process-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-rose) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+
+        .process-number {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            width: 30px;
+            height: 30px;
+            background: var(--color-emerald);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: var(--color-darker);
+        }
+
+        .process-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+
+        .process-card p {
+            color: var(--color-text-light);
+        }
+
+        /* Testimonials Section */
+.testimonial-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    border: 1px solid rgba(255,255,255,0.2);
+    overflow: hidden;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(255,255,255,0.4);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.testimonial-image {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Чтобы изображение всегда было видно полностью */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    max-width: 100%;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.testimonial-content {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-quote {
+    font-size: 3rem;
+    color: var(--color-amber);
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1;
+}
+
+.testimonial-text {
+    color: var(--color-text-light);
+    margin-bottom: 25px;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-word;
+    flex-grow: 1;
+}
+
+.testimonial-rating {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.star {
+    color: var(--color-amber);
+    font-size: 1.2rem;
+}
+
+.testimonial-author {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+}
+
+.author-name {
+    font-weight: 600;
+    color: var(--color-amber);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.product-info {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, var(--color-darker) 0%, var(--color-purple-dark) 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 30% 70%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 30%, rgba(244, 63, 94, 0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .cta h2 {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        .cta p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            color: var(--color-text-light);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-darker);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 60px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-rose) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-logo-text h3 {
+            font-size: 1.5rem;
+        }
+
+        .footer-logo-text p {
+            color: var(--color-amber);
+            font-size: 0.875rem;
+        }
+
+        .footer-links h4 {
+            margin-bottom: 20px;
+            font-size: 1.125rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--color-text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a:hover {
+            color: var(--color-amber);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--color-text-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .heart {
+            color: var(--color-rose);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .modal-actions {
+                flex-direction: column;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .section-header h2 {
+                font-size: 2.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+
+        .text-justify {
+    text-align: justify;
+}
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    position: relative;
+}
+
+.process-card {
+    text-align: center;
+    padding: 40px 25px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.process-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    border-color: rgba(255,255,255,0.4);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+.process-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.process-number {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--color-darker);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.process-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #fff 0%, #e2e8f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.process-card p {
+    color: var(--color-text-light);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.process-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.process-card:hover .process-glow {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .process-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .process-card {
+        padding: 30px 20px;
+    }
+}
+.testimonial-image:hover img {
+    transform: scale(1.05);
+}
+
+.testimonial-image:hover div {
+    opacity: 1;
+}
+/* Discounts Section */
+.discounts {
+    background: linear-gradient(to bottom, var(--color-purple-dark), var(--color-darker));
+    padding: 80px 0;
+}
+
+.discounts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.discount-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 40px;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.discount-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(245, 158, 11, 0.4);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.discount-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-rose) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-size: 2rem;
+}
+
+.discount-card h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.75rem;
+    background: linear-gradient(135deg, #fff 0%, #e2e8f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Slider Styles */
+.slider-container {
+    margin: 30px 0;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.slider-labels span {
+    font-size: 0.9rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    margin: 20px 0;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    outline: none;
+    position: relative;
+    z-index: 2;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-rose) 100%);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid var(--color-darker);
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+    transition: all 0.3s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.6);
+}
+
+.slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, var(--color-amber) 0%, var(--color-rose) 100%);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid var(--color-darker);
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+}
+
+.slider-ticks {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 8px;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.tick {
+    width: 2px;
+    height: 16px;
+    background: rgba(255,255,255,0.3);
+    margin-top: -4px;
+    border-radius: 1px;
+}
+
+.slider-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+}
+
+.step {
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Discount Results */
+.discount-result {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 25px;
+    margin: 25px 0;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.result-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.result-label {
+    color: var(--color-text-light);
+    font-weight: 500;
+}
+
+.result-value {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.result-value.discount {
+    color: var(--color-amber);
+    font-size: 1.3rem;
+}
+
+.result-value.saving {
+    color: var(--color-emerald);
+    font-size: 1.2rem;
+}
+
+.discount-desc {
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+/* Holidays Styles */
+.holidays-list {
+    margin: 25px 0;
+}
+
+.holiday-item {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 15px;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
+}
+
+.holiday-item:hover {
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 0 -10px;
+}
+
+.holiday-item:last-child {
+    border-bottom: none;
+}
+
+.holiday-date {
+    font-weight: 600;
+    color: var(--color-amber);
+    font-size: 0.95rem;
+}
+
+.holiday-discount {
+    background: linear-gradient(135deg, var(--color-rose) 0%, var(--color-purple) 100%);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    min-width: 50px;
+    text-align: center;
+}
+
+.holiday-name {
+    text-align: right;
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+}
+
+.holiday-note {
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 0.8rem;
+    margin-top: 20px;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/* Current Promotions */
+.current-promotions {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 50px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.current-promotions h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    background: linear-gradient(135deg, #fff 0%, #e2e8f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.promotions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.promotion-card {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.promotion-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(245, 158, 11, 0.4);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.promotion-badge {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+    filter: grayscale(0.3);
+    transition: all 0.3s ease;
+}
+
+.promotion-card:hover .promotion-badge {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.promotion-card h4 {
+    margin-bottom: 15px;
+    color: var(--color-amber);
+    font-size: 1.3rem;
+}
+
+.promotion-card p {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .discounts-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .discount-card {
+        padding: 30px 25px;
+    }
+    
+    .holiday-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .holiday-name {
+        text-align: center;
+    }
+    
+    .promotions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .current-promotions {
+        padding: 35px 25px;
+    }
+    
+    .slider-labels span {
+        font-size: 0.8rem;
+    }
+    
+    .slider-steps {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .discounts {
+        padding: 60px 0;
+    }
+    
+    .discount-card {
+        padding: 25px 20px;
+    }
+    
+    .current-promotions {
+        padding: 30px 20px;
+    }
+    
+    .promotion-card {
+        padding: 25px 20px;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1 class="playfair">Уникальность в каждом изделии. <span class="gradient-text">Подчеркни связь с близким человеком.</span></h1>
+                <p>Уникальные украшения с радужной  глаза от Kiki. Каждое — единственное и неповторимое.</p>
+                <a href="#gallery" class="btn btn-primary">Открыть коллекцию</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+   <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content fade-in">
+                    <h2 class="playfair">О себе</h2>
+                    <div class="text-justify">
+                        <p>"Я - Кики, и в каждое созданное мной украшение я вкладываю душу и сердце. Для меня радужка глаза — это символ уникальности каждого человека, его внутреннего мира, который я стараюсь запечатлеть в камне..."</p>
+                        <p>Каждое изделие рождается из вдохновения и несет в себе частичку магии. Я верю, что настоящие украшения должны рассказывать историю и становиться личными талисманами для своих владельцев.</p>
+                        <p>В своей работе я сочетаю традиционные ювелирные техники с современным дизайном, создавая неповторимые произведения искусства, которые будут с вами долгие годы.</p>
+                        <p>Каждое украшение сопровождается уникальной упаковкой ручной работы — изящная шкатулка, украшенная тем же магическим узором, что и само изделие. Распаковка становится особым ритуалом, подчеркивающим ценность и исключительность вашего будущего талисмана.</p>
+                    </div>
+
+                </div>
+                <div class="about-image fade-in delay-1" style="margin-top: 40px;">
+                    <img src="kiki.jpg" alt="Kiki за работой" style="width: 100%;  height: 100%; object-fit: cover; border-radius: 20px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="playfair">Коллекция Уникальных Творений</h2>
+                <p>Каждое изделие создается в единственном экземпляре и несет в себе частичку магии</p>
+            </div>
+
+            <div class="filters fade-in delay-1">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="pendants">Кулоны</button>
+                <button class="filter-btn" data-filter="rings">Кольца</button>
+                <button class="filter-btn" data-filter="keychains">Брелоки</button>
+                <button class="filter-btn" data-filter="braslet">Браслеты</button>
+            </div>
+
+            <div class="products-grid">
+                <!-- Products will be inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+    <div class="container">
+        <div class="section-header fade-in">
+            <h2 class="playfair">Магия Создания</h2>
+            <p>От вдохновения до вашего талисмана — путешествие длиною в душу</p>
+        </div>
+
+        <div class="process-grid">
+            <div class="process-card fade-in">
+                <div class="process-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <div class="icon-wrapper">
+                        <span style="font-size: 2rem;">🌌</span>
+                    </div>
+                    <div class="process-number">1</div>
+                </div>
+                <h3 class="playfair">Вдохновение</h3>
+                <p>Каждая радужка рождается из глубины души, впитывая эмоции и превращая их в уникальный узор</p>
+                <div class="process-glow" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+            </div>
+
+            <div class="process-card fade-in delay-1">
+                <div class="process-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <div class="icon-wrapper">
+                        <span style="font-size: 2rem;">🎨</span>
+                    </div>
+                    <div class="process-number">2</div>
+                </div>
+                <h3 class="playfair">Творение</h3>
+                <p>Тончайшая работа с цветом и формой, где каждый мазок кисти — это дыхание жизни</p>
+                <div class="process-glow" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+            </div>
+
+            <div class="process-card fade-in delay-2">
+                <div class="process-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <div class="icon-wrapper">
+                        <span style="font-size: 2rem;">⚡</span>
+                    </div>
+                    <div class="process-number">3</div>
+                </div>
+                <h3 class="playfair">Магия</h3>
+                <p>Превращение материалов в одушевлённое существо, готовое стать вашим хранителем</p>
+                <div class="process-glow" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+            </div>
+
+            <div class="process-card fade-in delay-3">
+                <div class="process-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                    <div class="icon-wrapper">
+                        <span style="font-size: 2rem;">🌟</span>
+                    </div>
+                    <div class="process-number">4</div>
+                </div>
+                <h3 class="playfair">Наследие</h3>
+                <p>Ваш будущий талисман обретает форму, готовый нести свою магию через годы</p>
+                <div class="process-glow" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Замени весь раздел discounts на этот код -->
+<section class="discounts" id="discounts">
+    <div class="container">
+        <div class="section-header fade-in">
+            <h2 class="playfair">Накопительная система скидок</h2>
+            <p>Чем больше вы покупаете, тем выше ваша персональная скидка</p>
+        </div>
+
+        <div class="discounts-grid">
+            <!-- Накопительная система с ползунком -->
+            <div class="discount-card fade-in">
+                <div class="discount-icon">
+                    <span style="font-size: 2.5rem;">🎁</span>
+                </div>
+                <h3 class="playfair">Ваша скидка</h3>
+                
+                <div class="slider-container">
+                    <div class="slider-labels">
+                        <span>0%</span>
+                        <span>3%</span>
+                        <span>5%</span>
+                        <span>7%</span>
+                        <span>10%</span>
+                    </div>
+                    
+                    <div class="slider-wrapper">
+                        <input type="range" 
+                               min="0" 
+                               max="30000" 
+                               value="7500" 
+                               class="slider" 
+                               id="discountSlider">
+                        <div class="slider-ticks">
+                            <span class="tick" data-value="0"></span>
+                            <span class="tick" data-value="5000"></span>
+                            <span class="tick" data-value="10000"></span>
+                            <span class="tick" data-value="20000"></span>
+                            <span class="tick" data-value="30000"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="slider-steps">
+                        <div class="step">0₽</div>
+                        <div class="step">5 000₽</div>
+                        <div class="step">10 000₽</div>
+                        <div class="step">20 000₽</div>
+                        <div class="step">30 000₽</div>
+                    </div>
+                </div>
+                
+                <div class="discount-result">
+                    <div class="result-item">
+                        <span class="result-label">Сумма покупок:</span>
+                        <span class="result-value" id="currentAmount">7 500₽</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Ваша скидка:</span>
+                        <span class="result-value discount" id="currentDiscount">3%</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Экономия:</span>
+                        <span class="result-value saving" id="currentSaving">225₽</span>
+                    </div>
+                </div>
+                
+                <p class="discount-desc">Скидка применяется автоматически ко всем последующим заказам</p>
+            </div>
+
+            <!-- Праздничные скидки -->
+            <div class="discount-card fade-in delay-1">
+                <div class="discount-icon">
+                    <span style="font-size: 2.5rem;">🎄</span>
+                </div>
+                <h3 class="playfair">Праздничные скидки</h3>
+                <div class="holidays-list">
+                    <div class="holiday-item">
+                        <span class="holiday-date">14 февраля</span>
+                        <span class="holiday-discount">7%</span>
+                        <span class="holiday-name">День святого Валентина</span>
+                    </div>
+                    <div class="holiday-item">
+                        <span class="holiday-date">8 марта</span>
+                        <span class="holiday-discount">5%</span>
+                        <span class="holiday-name">Международный женский день</span>
+                    </div>
+                    <div class="holiday-item">
+                        <span class="holiday-date">1-9 мая</span>
+                        <span class="holiday-discount">10%</span>
+                        <span class="holiday-name">Майские праздники</span>
+                    </div>
+                    <div class="holiday-item">
+                        <span class="holiday-date">День рождения</span>
+                        <span class="holiday-discount">10%</span>
+                        <span class="holiday-name">В течение недели</span>
+                    </div>
+                </div>
+                <p class="holiday-note">*Скидки не суммируются, применяется максимальная доступная</p>
+            </div>
+        </div>
+
+        <!-- Текущие акции -->
+        <div class="current-promotions fade-in delay-2">
+            <h3 class="playfair">Текущие акции</h3>
+            <div class="promotions-grid">
+                <div class="promotion-card">
+                    <div class="promotion-badge">🔥</div>
+                    <h4>Первый заказ</h4>
+                    <p>Скидка 3% на первый заказ для новых клиентов</p>
+                </div>
+                <div class="promotion-card">
+                    <div class="promotion-badge">💝</div>
+                    <h4>Парные заказы</h4>
+                    <p>Заказ двух одинаковых изделий - скидка 5% на оба</p>
+                </div>
+                <div class="promotion-card">
+                    <div class="promotion-badge">📸</div>
+                    <h4>Отзыв с фото</h4>
+                    <p>Скидка 5% за отзыв с фотографией изделия</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+    <div class="container">
+        <div class="section-header fade-in">
+            <h2 class="playfair">Истории Волшебства</h2>
+            <p>Талисманы, которые уже обрели своих владельцев и сердца</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-image">
+    <img src="ot1.jpg" alt="Работа для Алисы - Кулон Глубины Океана" style="width: 100%; height: 100%; object-fit: cover;">
+    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3); opacity: 0; transition: opacity 0.3s ease;"></div>
+</div>
+                <div class="testimonial-content">
+                    <p class="testimonial-text">Здравствуйте! Сегодня получили наши кулончики, мы в восторге 😍 Спасибо вам большое! Сейчас находимся на расстояние с молодым человеком, а теперь частички друг друга всегда с нами, где бы мы ни были. Спасибо за то, что помогаете нам оставаться ближе!!!🥰❤️</p>
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-name">Ксюша</div>
+                        <div class="product-info">Кулон "Два Взгляда"</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card fade-in delay-1">
+                <div class="testimonial-image">
+    <img src="ot2.jpg" alt="Работа для Алисы - Кулон Глубины Океана" style="width: 100%; height: 100%; object-fit: cover;">
+    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3); opacity: 0; transition: opacity 0.3s ease;"></div>
+</div>
+                <div class="testimonial-content">
+                    <p class="testimonial-text">Спасибо за быструю работу🔥🔥🔥 Эмоции, красота и стиль. Вот так бы описал изделие. Жене подарок безумно понравился❤️
+                    <p class="testimonial-text">Отдельное спасибо за красивую упаковку))</p>
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-name">Дмитрий</div>
+                        <div class="product-info">Кулон "Двойная Радужка"</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card fade-in delay-2">
+                <div class="testimonial-image">
+    <img src="ot3.jpg" alt="Работа для Алисы - Кулон Глубины Океана" style="width: 100%; height: 100%; object-fit: cover;">
+    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3); opacity: 0; transition: opacity 0.3s ease;"></div>
+</div>
+                <div class="testimonial-content">
+                    <p class="testimonial-text">Кiki, здравствуйте! Мне пришли кулончики, и сказать ,что я ошеломлена, это ничего не сказать!!!! Это настолько красиво, что даже не могу описать словами💔💔 вы очень красиво подчеркнули рудужку глаза моей подруги 🤍,будто смотрю в ее глаза😍 огромное вам спасибо за вашу работу!!!</p>
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-name">Дарья</div>
+                        <div class="product-info">Кулон "Ваша Радужка"</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+        <div class="cta-bg"></div>
+        <div class="container">
+            <div class="fade-in">
+                <h2 class="playfair">Найдите свой <span class="gradient-text">уникальный взгляд</span></h2>
+                <p>Ваш талисман ждет вас. Давайте создадим что-то волшебное вместе</p>
+                <div class="cta-buttons">
+                    <a href="https://t.me/kiki_eye" class="btn btn-primary">
+                        <span>📷</span> Подписаться на канал в Telegram
+                    </a>
+                    <a href="https://t.me/kikiWyour" class="btn btn-secondary">
+                        <span>💬</span> Связаться с Kiki
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-links">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+    <img src="logo.jpg" alt="Kiki Eyes Jewelry" style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%;">
+</div>
+                        <div class="footer-logo-text">
+                            <h3 class="playfair">The rainbow eye</h3>
+                            <p>Украшения от Kiki</p>
+                        </div>
+                    </div>
+                    <p>Создаем уникальные украшения с душой и магией</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="https://t.me/kikiWyour"><span>💬</span> Telegram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="#about">О мастере</a></li>
+                        <li><a href="#gallery">Коллекция</a></li>
+                        <li><a href="#process">Процесс создания</a></li>
+                        <li><a href="#testimonials">Отзывы</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© KIKI rainbow EYES, 2025. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">×</button>
+            <div class="modal-image">
+                <span style="font-size: 5rem;">👁️</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-title">
+                    <h3 class="playfair" id="modalProductName">Название продукта</h3>
+                    <div class="modal-price" id="modalProductPrice">0 ₽</div>
+                </div>
+                <p class="modal-description" id="modalProductDescription">Описание продукта</p>
+                <div class="modal-unique">
+                    🔮 ЭТО УНИКАЛЬНОЕ ИЗДЕЛИЕ. ВТОРОГО ТАКОГО НЕТ.
+                </div>
+                <div class="modal-materials">
+                    <h4>Материалы:</h4>
+                    <ul id="modalProductMaterials">
+                        <!-- Materials will be inserted by JavaScript -->
+                    </ul>
+                </div>
+                <div class="modal-actions">
+    <a href="https://t.me/kikiWyour" class="btn btn-primary">
+        <span>🛒</span> Связаться для заказа
+    </a>
+    <a href="https://t.me/kiki_eye" class="btn btn-secondary">
+        <span>📷</span> Telegram
+    </a>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Products data
+        const products = [
+    {
+        id: 1,
+        name: '"Ваша Радужка"',
+        category: 'pendants',
+        price: '1399',
+        description: 'Уникальный кулон с радужкой глаза. Носите частичку любимого человека с собой как личный талисман.',
+        materials: ['Стеклянная вставка ручной работы', 'Цепочка из нержавеющей стали', 'Серебристый цвет'],
+        image: 'p3.jpg'
+    },
+    {
+        id: 2,
+        name: '"TWO RAINBOW"',
+        category: 'pendants',
+        price: '1499',
+        description: 'Стильный кулон с двумя радужками в современном дизайне. Идеально подходит для особых случаев.',
+        materials: ['Стеклянная вставка ручной работы', 'Цепочка из нержавеющей стали', 'Серебристый цвет'],
+        image: 'p4.jpg'
+    },
+    {
+        id: 3,
+        name: '"Два Взгляда"',
+        category: 'pendants',
+        price: '2899',
+        description: 'Парный кулон для влюбленных с двумя радужками. Символизирует вашу вечную привязанность друг к другу.',
+        materials: ['Стеклянная вставка ручной работы', 'Цепочка из нержавеющей стали', 'Серебристый цвет'],
+        image: 'p1.jpg'
+    },
+    {
+        id: 4,
+        name: 'Два Взгляда "TWO RAINBOW"',
+        category: 'pendants',
+        price: '2999',
+        description: 'Эксклюзивный кулон с двойной радужкой. Идеальный подарок для пар, которые хотят всегда чувствовать связь друг с другом даже на расстоянии.',
+        materials: ['Стеклянная вставка ручной работы', 'Цепочка из нержавеющей стали', 'Серебристый цвет'],
+        image: 'p2.jpg'
+    },
+    {
+        id: 5,
+        name: '"Глаз на Пальце"',
+        category: 'rings',
+        price: '1299',
+        description: 'Изящное кольцо с радужкой глаза. Позволяет всегда видеть взгляд любимого человека на своем пальце как вечное напоминание.',
+        materials: ['Стеклянная вставка ручной работы', 'Нержавеющая сталь', 'Серебристый цвет'],
+        image: 'p7.jpg'
+    },
+    {
+        id: 6,
+        name: '"Огненная Душа"',
+        category: 'keychains',
+        price: '1099 - 1499',
+        description: 'Стильный брелок с радужкой для повседневного использования. Всегда носите с собой частичку своего любимого человека.',
+        materials: ['Стеклянная вставка ручной работы', 'Нержавеющая сталь', 'Золотой или серебристый цвет'],
+        image: 'p6.jpg'
+    },
+    {
+        id: 7,
+        name: '"Ваша Радужка"',
+        category: 'braslet',
+        price: '1499',
+        description: 'Элегантный браслет с радужкой глаза. Комфортное ношение и стильный акцент в вашем повседневном образе.',
+        materials: ['Стеклянная вставка ручной работы', 'Цепочка из нержавеющей стали', 'Серебристый цвет'],
+        image: 'p5.jpg'
+    },
+];
+        // DOM elements
+        const productsGrid = document.querySelector('.products-grid');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const modal = document.getElementById('productModal');
+        const modalClose = document.getElementById('modalClose');
+
+        // Render products
+        function renderProducts(filter = 'all') {
+    productsGrid.innerHTML = '';
+    
+    const filteredProducts = filter === 'all' 
+        ? products 
+        : products.filter(product => product.category === filter);
+    
+    filteredProducts.forEach(product => {
+        const categoryName = {
+            'pendants': 'Кулон',
+            'rings': 'Кольцо',
+            'keychains': 'Брелок',
+            'braslet': 'Браслет'
+        }[product.category];
+        const productCard = document.createElement('div');
+        productCard.className = 'product-card fade-in';
+        productCard.innerHTML = `
+            <div class="product-image">
+                <div class="product-badge">${categoryName}</div>
+                ${product.image ? 
+                    `<img src="${product.image}" alt="${product.name}" style="width: 100%; height: 100%; object-fit: cover;">` :
+                    `<span style="font-size: 3rem;">👁️</span>`
+                }
+            </div>
+            <div class="product-content">
+                <h3 class="product-title playfair">${product.name}</h3>
+                <p class="product-description">${product.description}</p>
+                <div class="product-footer">
+                    <div class="product-price">${product.price} ₽</div>
+                    <button class="btn btn-primary" data-id="${product.id}">
+                        <span>🔍</span> Подробнее
+                    </button>
+                </div>
+            </div>
+        `;
+        
+        productsGrid.appendChild(productCard);
+        
+        // Add click event to product card
+        const viewBtn = productCard.querySelector('.btn');
+        viewBtn.addEventListener('click', () => openModal(product));
+    });
+}
+
+        // Open modal with product details
+        function openModal(product) {
+            const categoryName = {
+                'pendants': 'Кулон',
+                'rings': 'Кольцо',
+                'keychains': 'Брелок',
+                'braslet': 'Браслет'
+            }[product.category];
+            
+            const modalImage = document.querySelector('.modal-image');
+            modalImage.style.height = '850px';
+    modalImage.innerHTML = product.image ? 
+        `<img src="${product.image}" alt="${product.name}" style="width: 100%; height: 100%; object-fit: cover;">` :
+        `<span style="font-size: 5rem;">👁️</span>`;
+            document.getElementById('modalProductName').textContent = product.name;
+            document.getElementById('modalProductPrice').textContent = `${product.price} ₽`;
+            document.getElementById('modalProductDescription').textContent = product.description;
+            
+            const materialsList = document.getElementById('modalProductMaterials');
+            materialsList.innerHTML = '';
+            
+            product.materials.forEach(material => {
+                const li = document.createElement('li');
+                li.textContent = material;
+                materialsList.appendChild(li);
+            });
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close modal
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            // Render initial products
+            renderProducts();
+            
+            // Filter buttons event listeners
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    renderProducts(btn.dataset.filter);
+                });
+            });
+            
+            // Modal close event listeners
+            modalClose.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeModal();
+            });
+            
+            // Scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('section > * > *').forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        // Add some interactive effects
+        document.addEventListener('mousemove', (e) => {
+            const heroBg = document.querySelector('.hero-bg');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            heroBg.style.transform = `translate(${x * 20}px, ${y * 20}px)`;
+        });
+        // Discount Slider Functionality
+class DiscountCalculator {
+    constructor() {
+        this.slider = document.getElementById('discountSlider');
+        this.currentAmount = document.getElementById('currentAmount');
+        this.currentDiscount = document.getElementById('currentDiscount');
+        this.currentSaving = document.getElementById('currentSaving');
+        
+        this.discountRanges = [
+            { min: 0, max: 5000, discount: 0 },
+            { min: 5000, max: 10000, discount: 3 },
+            { min: 10000, max: 20000, discount: 5 },
+            { min: 20000, max: 30000, discount: 7 },
+            { min: 30000, max: Infinity, discount: 10 }
+        ];
+        
+        this.init();
+    }
+    
+    init() {
+        // Initial calculation
+        this.updateDiscountInfo(this.slider.value);
+        
+        // Event listener for slider
+        this.slider.addEventListener('input', (e) => {
+            this.updateDiscountInfo(e.target.value);
+            this.addPulseAnimation();
+        });
+        
+        // Add click events to ticks
+        this.addTickEvents();
+    }
+    
+    calculateDiscount(amount) {
+        amount = parseInt(amount);
+        
+        for (let range of this.discountRanges) {
+            if (amount >= range.min && amount < range.max) {
+                return range.discount;
+            }
+        }
+        
+        return 10; // Maximum discount
+    }
+    
+    updateDiscountInfo(amount) {
+        const discount = this.calculateDiscount(amount);
+        const saving = (amount * discount) / 100;
+        
+        // Format numbers with spaces for thousands
+        const formattedAmount = this.formatNumber(amount);
+        const formattedSaving = this.formatNumber(Math.round(saving));
+        
+        this.currentAmount.textContent = `${formattedAmount}₽`;
+        this.currentDiscount.textContent = `${discount}%`;
+        this.currentSaving.textContent = `${formattedSaving}₽`;
+        
+        // Update slider visual (gradient background based on progress)
+        this.updateSliderProgress(amount);
+    }
+    
+    formatNumber(num) {
+        return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+    }
+    
+    updateSliderProgress(value) {
+        const max = this.slider.max;
+        const percentage = (value / max) * 100;
+        
+        // Create gradient background based on progress
+        this.slider.style.background = `linear-gradient(to right, 
+            var(--color-amber) 0%, 
+            var(--color-rose) ${percentage}%, 
+            rgba(255,255,255,0.1) ${percentage}%, 
+            rgba(255,255,255,0.1) 100%)`;
+    }
+    
+    addTickEvents() {
+        const ticks = document.querySelectorAll('.tick');
+        
+        ticks.forEach(tick => {
+            tick.addEventListener('click', (e) => {
+                const value = e.target.getAttribute('data-value');
+                this.slider.value = value;
+                this.updateDiscountInfo(value);
+                this.addPulseAnimation();
+            });
+        });
+    }
+    
+    addPulseAnimation() {
+        this.currentDiscount.classList.add('pulse');
+        setTimeout(() => {
+            this.currentDiscount.classList.remove('pulse');
+        }, 600);
+    }
+}
+
+// Add pulse animation CSS
+const pulseStyle = document.createElement('style');
+pulseStyle.textContent = `
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    .pulse {
+        animation: pulse 0.6s ease;
+    }
+    
+    /* Smooth transitions for result values */
+    .result-value {
+        transition: all 0.3s ease;
+    }
+`;
+document.head.appendChild(pulseStyle);
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    new DiscountCalculator();
+    
+    // Add intersection observer for animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+    
+    // Observe discount cards for scroll animations
+    document.querySelectorAll('.discount-card, .current-promotions').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+});
+
+// Additional utility function for future enhancements
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        // Show success message (could be implemented later)
+        console.log('Text copied to clipboard');
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
+    });
+}
+
+// Export for potential future module use
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = DiscountCalculator;
+}
+    </script>
+</body>
+</html>
